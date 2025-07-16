@@ -1,0 +1,541 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.container1 {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0px 10px 9px 5px #0000;
+    display: flex;
+    gap: 12rem;
+    position: fixed;
+    z-index: 2;
+}
+
+.search_bar input {
+    background-color: transparent;
+    position: relative;
+    left: 150px;
+    top: 15px;
+    padding: 5px 5px 13px 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: 0px;
+}
+
+.search_bar input::placeholder {
+    font-size: 16px;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-weight: lighter;
+    color: #000;
+}
+
+.search_bar svg {
+    margin-left: 120px;
+    position: relative;
+    top: 21px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    top: 30px;
+
+}
+
+nav ul li a {
+    color: #3b3b3b;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #213e8ffa;
+}
+
+nav ul li a:active {
+    color: #213e8ffa;
+    transition: 0.3s ease-in-out;
+}
+
+.icons {
+    position: relative;
+    top: 32px;
+
+}
+
+.icons a {
+    margin-left: 10px;
+}
+
+.trave {
+    position: relative;
+    top: 140px;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.trave .h {
+    font-family: "Quicksand";
+    font-weight: 300;
+    font-size: 37px;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.trave .p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 20px;
+    letter-spacing: 0.6px;
+    word-spacing: 1.5px;
+    line-height: 1.4;
+}
+
+.card span svg {
+    width: 30px;
+    height: 40px;
+    border-radius: 70px;
+}
+
+.flex_container {
+    position: relative;
+    top: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.flex_item {
+    border: 1px solid #a3a3a3;
+    margin-bottom: 120px;
+}
+
+.dt p {
+    font-family: "Quicksand";
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+}
+
+.dt span {
+    font-family: "Quicksand";
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+}
+
+.card {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    position: relative;
+    left: 5%;
+}
+
+.dt {
+    position: relative;
+    top: 5px;
+}
+
+.l {
+    width: 100%;
+    height: 1px;
+    /* margin: auto; */
+    background-color: #a7a6a6;
+}
+
+.para {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.para h3 {
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.para h3:hover {
+    color: #2085f8;
+    transition: 0.3s ease-in-out;
+}
+
+.para p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+.para p:hover {
+    color: #2085f8;
+    transition: 0.3s ease-in-out;
+}
+
+.icon span i {
+    font-size: 20px;
+    color: #000;
+}
+
+.icon span:nth-child(2) {
+    margin-left: 35px;
+}
+
+.social_icon {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    position: relative;
+    top: 300px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(43, 96, 241);
+}
+
+.social_icon .f span img {
+    position: relative;
+    top: 8px;
+}
+
+.social_icon .f a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 17px;
+    position: relative;
+    top: 14px;
+}
+
+.card-hover {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-hover img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.card-hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-hover:hover img {
+    filter: blur(4px);
+}
+
+.card-hover:hover .overlay {
+    opacity: 1;
+}
+
+.carousel-item {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.carousel-inner {
+    padding: 30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1);
+}
+
+
+.container {
+    position: relative;
+    top: 300px;
+}
+
+.footer {
+    position: relative;
+    top: 300px;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-left: 2%;
+    font-family: "Quicksand", sans-serif;
+    padding-bottom: 20px;
+}
+
+.img_side {
+    display: flex;
+    justify-content: left;
+    gap: 18px;
+    width: 75%;
+    position: relative;
+    padding-left: 10%;
+}
+
+
+.img_side img {
+    position: relative;
+    /* padding-top: 120px; */
+}
+
+.img_side h3 {
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    /* padding-top: 120px; */
+}
+
+.img_side p {
+    font-family: "Quicksand";
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 28px;
+}
+
+.img_side a {
+    text-decoration: underline;
+    color: #fff;
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 70%;
+    position: relative;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.form .h{
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 27px;
+    color: #fff;
+    padding-bottom: 60px;
+    
+}
+
+.form .label {
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.form .input input {
+    width: 80%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #fff;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.form .input input:hover {
+    border: 1px solid #2085f8;
+    transition: 0.3s ease-in-out;
+}
+
+.form .input input::placeholder {
+    color: #fff;
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form .check{
+    position: relative;
+    top: 10px;
+    padding-bottom: 60px;
+}
+
+.form .bbtn{
+   
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 100px;
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form .bbtn a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    padding: 18px 100.5px;
+    position: relative;
+    top: 14px;
+     width: 300px;
+    height: 50px;
+    background-color: #2085f8;
+    color: #fff;
+}
+
+.form .bbtn a:hover {
+    background-color: #fff;
+    color: #2085f8;
+    transition: 0.3s ease-in-out;
+}
+
+/* Floating Chat Button */
+    .chat-toggle {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #2085f8;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 2px;
+      border: none;
+      cursor: pointer;
+      font-size: 28px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Chat Container */
+    .chat-container {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 350px;
+      height: 450px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+      z-index: 1000;
+    }
+
+    .chat-header {
+      background-color: #2085f8;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .chat-body {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .chat-message {
+      max-width: 80%;
+      padding: 10px 14px;
+      border-radius: 15px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .user-message {
+      align-self: flex-end;
+      background-color: #dcf8c6;
+    }
+
+    .bot-message {
+      align-self: flex-start;
+      background-color: #f0f0f0;
+    }
+
+    .chat-footer {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-footer input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 0 0 0 15px;
+      outline: none;
+    }
+
+    .chat-footer button {
+      padding: 0 20px;
+      background-color: #2085f8;
+      color: white;
+      border: none;
+      border-radius: 0 0 15px 0;
+      cursor: pointer;
+    }
